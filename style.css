@@ -1,32 +1,54 @@
 <style>
 
-img {
-
-    width : 600px;
+a :link {
+  color :white;
+}
+a :visited {
+  color :red;
 }
 a {
-color:black;
-text-decoration-line: none;
+color:white;
 }
+a:hover {
+  background-color: black;
+  color: red; }
 body {
-margin: 30px;
-}
+  font-family: 'Quattrocento', serif;
+  background-color: black;
+margin: 30px; }
 h1 {
+font-family: 'Secular One', sans-serif;
 color: red;
-font-size: 45px;
+font-size: 100px;
 text-align: center;
-border-bottom: solid gray 1px;
-margin: 0px;
-padding : 20px;
+background-color: black;
+margin-left: 140px;
+margin-bottom: auto;
+padding : 30px; }
+hr {
+  border: solid gray 1px;
 }
 h2 {
-color : black 45px;
+color : red 45px;
+}
+#movie {
+  margin-left:10rem;
+  margin-right:10rem;
+}
+#grid p {
+  color: white;
+  text-align: justify;center;
+  margin-left: 10rem;
+  margin-right: 10rem;
 }
 #grid {
+  color : white;
+  border-right: 1px solid gray;
   display: grid;
   grid-template-columns: 150px 1fr;
 }
 #grid ol {
+color: white;
 font-size: 30px;
 border-right: 1px solid gray;
 width : 100px;
