@@ -43,7 +43,6 @@ color : red 45px;
 }
 #grid {
   color : white;
-  border-right: 1px solid gray;
   display: grid;
   grid-template-columns: 150px 1fr;
 }
