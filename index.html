@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>project</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color:  rgb(136, 167, 136);
+  padding: 2px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+
+footer {
+    width:100%;
+   height:auto;
+   position:absolute;
+   bottom: 0;
+   background:#5eaeff;
+  text-align: center;
+  color: white;
+}
+
+
+div.left_menu {
+    width: 20%;
+    height: 750px;
+        float: left;
+        box-sizing: border-box;
+        background: #8977ad;
+
+}
+
+div.right_content {
+    width: 80%;
+    height: 750px;;
+        float: left;
+        box-sizing: border-box;
+        background: #ece6cc;
+
+}
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 80%;
+}
+
+/* 반응형으로 창이 작아지면 레이아웃이 자동정렬 됩니다. */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+<script >
+    function selct(userInput){
+        if(userInput == 1){
+        location.href = "karo.html";
+    }
+
+    else{
+     alert("잘못 입력하셨습니다.");
+     location.href = "main.html"; 
+    }
+    }
+    function selectAlg(){
+     userInput = prompt("1. 다익스트라 알고리즘 2. 프림 알고리즘 3. 크루스칼 알고리즘","");
+     selct(userInput);
+ }
+
+ function test(){
+     location.href ="test.html";
+ }
+    
+</script>
+</head>
+<body>
+<header>
+  <h2>알고리즘 학습 프로그램</h2>
+</header>
+
+
+  <div class="left_menu">
+    <ul>
+   <h2>menu 부분</h2>
+      <g >
+        <button class="button" onclick="selectAlg()" >알고리즘 설명</button>
+        <button class="button">학습하기</button>
+        <button class="button" onclick="test()">진단 테스트</button>
+      </g>
+    </ul>
+</div>
+  
+<div class="right_content">
+    <ul>
+      <h2>content 부분</h2>
+      <li><a href="#">section.1</a></li>
+      <li><a href="#">section.2</a></li>
+      <li><a href="#">section.3</a></li>
+    </ul>
+</div>
+
+
+<footer>
+  <p>Footer 부분</p>
+</footer>
+
+</body>
+</html>
